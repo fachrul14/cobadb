@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "187344376625",
+    "project_id": "mobiledb-ca74e",
+    "storage_bucket": "mobiledb-ca74e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187344376625:android:25536d6b9d3da969151610",
+        "android_client_info": {
+          "package_name": "com.example.cobadb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY7R7UwOQF96wlvq7KZOjlnaFw0IGYeIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
