@@ -4,45 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/rcvNews">
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvNews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints">
-        <EditText
-            android:id="@+id/title"
-            android:layout_margin="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Masukan Judul"/>
-        <EditText
-            android:id="@+id/desc"
-            android:layout_margin="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Masukan Deskripsi"/>
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_margin="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="#E0E0E0"
-            android:contentDescription="Gambar yang dipilih"/>
-        <Button
-            android:id="@+id/btnChooseImage"
-            android:layout_margin="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Pilih Gambar"/>
-        <Button
-            android:id="@+id/btnAdd"
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Simpan"/>
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatAddNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
