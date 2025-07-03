@@ -5,6 +5,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("C:\\Users\\Public\\Documents\\news.jks")
+            storePassword = "20020414"
+            keyAlias = "news_data"
+            keyPassword = "20020414"
+        }
+    }
     namespace = "com.example.cobadb"
     compileSdk = 35
 
